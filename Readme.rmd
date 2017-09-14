@@ -1,0 +1,8 @@
+./codes/pev.py -i ./input/colon100 -d ./input/colon_psm/ -s ./input/colon_spec/ -o ./results/
+
+
+To run specplot : install argyll
+
+sudo apt-get install argyll
+
+Run specplot: https://bix-lab.ucsd.edu/display/CCMStools/Specplot+2.0

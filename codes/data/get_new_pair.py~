@@ -1,0 +1,31 @@
+import sys
+dic_ms={}
+ms_val={}
+pair={}
+with open(sys.argv[1],"r") as in1, open(sys.argv[2],"r") as in2:
+    for line in in1:
+        if "#" in line:
+            continue
+        line=line.strip().split("\t")
+        dic_ms[line[0]]=int(line[1])
+        ms_val[int(line[1])]=line[0]
+    for line in in2:
+        if "#" in line:
+            continue
+        line=line.strip().split("\t")
+        val=int(line[0])
+        r=line[1]
+        rm=dic_ms[r]
+        dif=rm-val
+        print dif
+        if ms_val.has_key(dif):
+            print r,ms_val[dif]
+
+        if ms_val.has_key(dif-1):
+            print r,ms_val[dif-1]
+
+        if ms_val.has_key(dif+1):
+            print r,ms_val[dif+1]
+
+        
+        

@@ -1,0 +1,5 @@
+#UniProtID	Event	Event_Type	Peptide	
+A8MVU1	32	mutation	QGTLTEYCSTLMSLPTK	
+P00325	61	mutation	MVAVGICR	
+P30837	66	mutation	LLNLLADLVER	
+P30837	67	mutation	LLNLLADLVERDR	
